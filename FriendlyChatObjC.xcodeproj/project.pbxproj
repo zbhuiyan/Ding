@@ -36,6 +36,7 @@
 		554BC6D3249114C7A06E522E /* libPods-FriendlyChatObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FriendlyChatObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A120A4761F6DEFB300C488DE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A120A4781F6DF76000C488DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A120A47A1F6E5A3900C488DE /* FriendlyChatObjC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FriendlyChatObjC.entitlements; sourceTree = "<group>"; };
 		EC9E464FC26475C208E43055 /* Pods-FriendlyChatObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChatObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyChatObjC/Pods-FriendlyChatObjC.release.xcconfig"; sourceTree = "<group>"; };
 		F014F166B3CBE10E5851D41F /* Pods-FriendlyChatObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChatObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyChatObjC/Pods-FriendlyChatObjC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +76,7 @@
 		107960821C6130EF003DB6CC /* FriendlyChatObjC */ = {
 			isa = PBXGroup;
 			children = (
+				A120A47A1F6E5A3900C488DE /* FriendlyChatObjC.entitlements */,
 				107960861C6130EF003DB6CC /* AppDelegate.h */,
 				107960871C6130EF003DB6CC /* AppDelegate.m */,
 				107960891C6130EF003DB6CC /* FCViewController.h */,
@@ -167,6 +169,11 @@
 					1079607F1C6130EF003DB6CC = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 7T8ZRGU67K;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -370,10 +377,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FriendlyChatObjC/FriendlyChatObjC.entitlements;
 				DEVELOPMENT_TEAM = 7T8ZRGU67K;
 				INFOPLIST_FILE = FriendlyChatObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.codelab.FriendlyChatObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.codelab.ding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -384,10 +392,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = FriendlyChatObjC/FriendlyChatObjC.entitlements;
 				DEVELOPMENT_TEAM = 7T8ZRGU67K;
 				INFOPLIST_FILE = FriendlyChatObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.codelab.FriendlyChatObjC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.codelab.ding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

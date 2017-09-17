@@ -16,8 +16,11 @@
 
 @import UIKit;
 @import GoogleSignIn;
+#import <UserNotifications/UserNotifications.h>
+@import Firebase;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

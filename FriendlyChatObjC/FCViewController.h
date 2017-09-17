@@ -14,9 +14,12 @@
 //  limitations under the License.
 //
 
+@import GoogleMaps;
 @import UIKit;
 
-@interface FCViewController : UIViewController
+@interface FCViewController : UIViewController <GMSMapViewDelegate>
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer;
 
 @end
 
