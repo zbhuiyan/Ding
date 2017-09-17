@@ -10,6 +10,8 @@ pod 'Firebase/Database'
 pod 'Firebase/Invites'
 pod 'Firebase/RemoteConfig'
 pod 'Firebase/Storage'
+pod 'Firebase/Messaging'
+pod 'Firebase/Core'
 
 target 'FriendlyChatObjC' do
 end
