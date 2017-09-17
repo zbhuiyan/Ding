@@ -74,5 +74,9 @@
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<array>
+		<key>Required Background Modes</key>
+		<string>App registers for location updates</string>
+	</array>
 </dict>
 </plist>
